@@ -1,0 +1,746 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+    font-family: 'Vidaloka', serif;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#f2f2f2;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Aladin');
+
+/* Custom CSS
+ * --------------------------------------- */
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto } 
+
+
+body{
+	font-family: 'Aladin', cursive;
+	color: #f2f2f2;
+}
+
+
+h1{
+	font-size: 6em;
+}
+p{
+	font-size: 2em;
+}
+.section{
+	text-align: center;
+}
+/*preloader*/
+#preloader  {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: #000000;
+     z-index: 10000;
+    height: 100%;
+ }
+
+#status  {
+     width: 50%;
+     height: 50%;
+     top: 25%;
+     left: 25%;
+     margin: auto;
+     position: absolute;
+     z-index: 10000;
+     background-image: url(loader.gif);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+
+/* Navigation Bar
+ * --------------------------------------- */
+ /* Remove margins and padding from the list, and add a black background color */
+ body {
+   margin: 0;
+ }
+ ul.nav {
+     list-style-type: none;
+     margin: 0;
+     padding: 20px;
+     overflow: hidden;
+     background-color: transparent;
+     position:fixed;
+     opacity:1;
+     z-index:50;
+     width: 100%;
+     
+ }
+
+ /* Float the list items side by side */
+ ul.nav li {float: left;}
+
+ /* Style the links inside the list items */
+ ul.nav li a {
+     display: inline-block;
+     float: left;
+     color: #fff;
+     text-align: center;
+     padding: 15px 25px;
+     text-decoration: none;
+     transition: 0.3s;
+     font-size: 20px;
+     opacity: 1;
+     font-family: 'Aladin', cursive;
+ }
+
+ /* Change background color of links on hover */
+ ul.nav li a:hover {color:#ffc400;}
+
+ /* Hide the list item that contains the link that should open and close the topnav on small screens */
+ ul.nav li.icon {display: none;}
+
+ /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.nav li:not(:first-child) {display: none;}
+  ul.nav li.icon {
+    display: inline-block;
+    color: #000;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.nav.responsive {
+    background: #333 !important;
+    width: 150px !important;
+    padding: 10px 0px !important;
+    right: 0 !important;
+    z-index: 999 !important;
+  }
+  ul.nav.responsive li:first-child a {
+    display: none;
+  }
+  ul.nav.responsive li.icon {
+    position: absolute;
+    float: right;
+    right: 0;
+    top: 0;
+  }
+  ul.nav li:first-child a {
+    padding: 0px 5px !important;
+  }
+  ul.nav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.nav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  .arrows {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+  }
+  #section2 p {
+    padding: 5px !important;
+    font-size: 13px !important;
+  }
+  #pp-nav.right {
+    right: 5px !important;
+  }
+  #blitz {
+    width: 100% !important;
+    max-width: 300px !important;
+    padding: 0 !important;
+  }
+  
+  #section8{
+		background-image: url(imgs/Gaming3.png);
+		padding: 0% 0 0 0;
+		background-size: 100% 100%;
+	}
+}
+
+/* Section 1
+ * --------------------------------------- */
+ #section1 {
+   background-repeat:no-repeat;
+   background-size: cover;
+ }
+#blitz {
+  position:inherit;
+width:60%;
+height:auto;
+padding-right: 60px;
+}
+/* Section 2
+ * --------------------------------------- */
+#section2 {
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+#section2 h1{
+  text-align: left;
+  font-size: 45px;
+  padding-left: 50px;
+
+}
+#section2 p{
+  padding-left: 100px;
+  padding-right: 10px;
+  padding-bottom: 200px;
+  text-align:left;
+  font-size: 20px;
+}
+
+/* Section 3
+ * --------------------------------------- */
+#section3 {
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+#section3 h1{
+  text-align: right;
+  font-size: 45px;
+  padding-right: 90px;
+}
+
+#section3 p{
+  text-align: right;
+  font-size: 20px;
+  padding-right: 90px;
+   
+}
+/* Section 4
+ * --------------------------------------- */
+#section4 {
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+/* Section 5
+ * --------------------------------------- */
+#section5 {
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+#section5 h1{
+  text-align: left;
+  font-size: 45px;
+  padding-left: 90px;
+}
+
+#section5 p{
+  text-align: left;
+  font-size: 20px;
+  padding-left: 90px;
+  padding-right: 400px;
+}
+/* Section 6
+ * --------------------------------------- */
+#section6 {
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+#section6 h1{
+  text-align: right;
+  font-size: 45px;
+  padding-right: 90px;
+}
+
+#section6 p{
+  text-align: right;
+  font-size: 20px;
+  padding-right: 90px;
+  padding-left: 500px;
+}
+/* Section 7
+ * --------------------------------------- */
+#section7 {
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+/* Section 8
+ * --------------------------------------- */
+#section8 {
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+#section8 h1{
+  text-align: left;
+  font-size: 45px;
+  padding-left: 90px;
+}
+
+#section8 p{
+  text-align: left;
+  font-size: 20px;
+  padding-left: 90px;
+  padding-right: 700px;
+}
+/* Section 9
+ * --------------------------------------- */
+#section9 {
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+#section9 h1{
+  text-align: right;
+  font-size: 45px;
+  padding-right: 90px;
+}
+#section9 p{
+  text-align: right;
+  font-size: 20px;
+  padding-right: 90px;
+  padding-left: 700px;
+}
+/* Section 10
+ * --------------------------------------- */
+#section10 {
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+#section10 h1{
+  text-align: left;
+  font-size: 45px;
+  padding-left: 90px;
+}
+#section10 p{
+  text-align: left;
+  font-size: 20px;
+  padding-right: 700px;
+  padding-left: 90px;
+}
+/* Section 11
+ * --------------------------------------- */
+#section11 {
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+#section11 h1{
+  text-align: right;
+  font-size: 45px;
+  padding-right: 90px;
+}
+#section11 p{
+  text-align: right;
+  font-size: 20px;
+  padding-right: 90px;
+  padding-left: 500px;
+}
+/* Section 12
+ * --------------------------------------- */
+#section12 {
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+#section12 h1{
+  text-align: left;
+  font-size: 45px;
+  padding-left: 90px;
+}
+#section12 p{
+  text-align: left;
+  font-size: 20px;
+  padding-left: 90px;
+  padding-right: 500px;
+}
+/*Arrow animation*/
+@keyframes  arrow
+{
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
+}
+
+@-webkit-keyframes arrow
+{
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
+}
+
+.arrows{
+  position: absolute;
+  bottom: 0px;
+  left: 48vw;
+  transition: all .25s
+}
+
+.arrows path{
+  stroke: #fff;
+  fill: transparent;
+  stroke-width: 2px;
+   animation: arrow 2s linear infinite;
+}
+
+.arrows path.a1{
+  animation-delay: 1s;
+  -webkit-animation-delay: -1s;
+}
+.arrows path.a2{
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+}
+.arrows path.a3{
+  animation-delay: -0s;
+  -webkit-animation-delay: 0s;
+}
+/*Teaser video CSS*/
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Aladin', cursive;
+	color: #fff;
+	background: #333 no-repeat center center;
+	background-size: cover;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	text-decoration: none;
+	color: #d9ecc9;
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	color: #fff;
+}
+.container {
+	width: 100vw;
+	height: 100vh;
+	border: 20px solid #fff;
+	position: relative;
+	overflow: hidden;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.video-wrap {
+	position: fixed;
+	z-index: 60;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.video-wrap--show {
+	pointer-events: auto;
+}
+.video-inner {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	opacity: 0;
+	background: black;
+}
+.video-wrap--show .video-inner {
+	opacity: 1;
+}
+.video-player {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	-webkit-transform: translate3d(0,-50%,0);
+	transform: translate3d(0,-50%,0);
+}
+.content {
+	position: relative;
+}
+
+/* Loader */
+.loader {
+	font-size: 2.5em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.video-loaded .loader {
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+.action {
+	font-family: 'Avenir Next', 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+	font-size: 1.15em;
+	font-weight: bold;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 1em 2em;
+	color: #fff;
+	border: 2px solid;
+	border-radius: 40px;
+	background: none;
+	-webkit-flex: none;
+	flex: none;
+}
+
+.action:focus {
+	outline: none;
+}
+.action__label {
+	display: inline-block;
+	margin: 0 0 0 0.75em;
+}
+
+.action__label--hidden {
+	position: absolute;
+	top: 200%;
+}
+.action--play {
+	display: block;
+	margin: 1em auto;
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transition: opacity 0.3s 0.1s;
+	transition: opacity 0.3s 0.1s;
+}
+
+.video-loaded .action--play {
+	opacity: 1;
+	pointer-events: auto;
+}
+.action--close {
+	line-height: 1;
+	position: absolute;
+	z-index: 60;
+	top: 30px;
+	right: 30px;
+	width: 60px;
+	height: 60px;
+	padding: 0;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	-webkit-transform: scale3d(0.7,0.7,1);
+	transform: scale3d(0.7,0.7,1);
+}
+
+.video-wrap--show .action--close {
+	opacity: 1;
+	-webkit-transition-delay: 1.2s;
+	transition-delay: 1.2s;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+@media screen and (min-width: 25em) {
+	.video-inner {
+		width: 30vw;
+		height: 30vw;
+		border: 20px solid #fff;
+		-webkit-transform: scale3d(0.1,0.1,1) rotate3d(0,0,1,-5deg);
+		transform: scale3d(0.1,0.1,1) rotate3d(0,0,1,-5deg);
+	}
+	.video-wrap--show .video-inner {
+		opacity: 0;
+		-webkit-animation: showVideo-1 1.25s forwards;
+		animation: showVideo-1 1.25s forwards;
+	}
+	.video-wrap--hide .video-inner {
+		-webkit-animation: hideVideo 1.25s forwards;
+		animation: hideVideo 1.25s forwards;
+	}
+	.video-player {
+		left: 50%;
+		width: auto;
+		height: 100vh;
+		-webkit-transition: -webkit-transform 1s;
+		transition: transform 1s;
+		-webkit-transform: translate3d(-50%,-50%,0) scale3d(0.7,0.7,1) rotate3d(0,0,1,5deg);
+		transform: translate3d(-50%,-50%,0) scale3d(0.7,0.7,1) rotate3d(0,0,1,5deg);
+	}
+	.video-wrap--show .video-player,
+	.video-wrap--hide .video-player {
+		-webkit-transform: translate3d(-50%,-50%,0) scale3d(1,1,1);
+		transform: translate3d(-50%,-50%,0) scale3d(1,1,1);
+	}
+}
+@media screen and (min-width: 25em) and (min-aspect-ratio: 1280/720) {
+	.video-inner {
+		width: 30vh;
+		height: 30vh;
+	}
+	.video-wrap--show .video-inner {
+		-webkit-animation: showVideo-2 1.25s forwards;
+		animation: showVideo-2 1.25s forwards;
+	}
+	.video-player {
+		width: 100vw;
+		height: auto;
+	}
+}
+@-webkit-keyframes showVideo-1 {
+	50% {
+		width: 50vw;
+		height: 50vw;
+		opacity: 1;
+		-webkit-transform: scale3d(0.5,0.5,1) rotate3d(0,0,1,-5deg);
+		transform: scale3d(0.5,0.5,1) rotate3d(0,0,1,-5deg);
+	}
+	100% {
+		width: 100vw;
+		height: 100vh;
+		opacity: 1;
+		-webkit-transform: scale3d(1,1,1) rotate3d(0,0,1,0deg);
+		transform: scale3d(1,1,1) rotate3d(0,0,1,0deg);
+	}
+}
+
+@keyframes showVideo-1 {
+	50% {
+		width: 50vw;
+		height: 50vw;
+		opacity: 1;
+		-webkit-transform: scale3d(0.5,0.5,1) rotate3d(0,0,1,-5deg);
+		transform: scale3d(0.5,0.5,1) rotate3d(0,0,1,-5deg);
+	}
+	100% {
+		width: 100vw;
+		height: 100vh;
+		opacity: 1;
+		-webkit-transform: scale3d(1,1,1) rotate3d(0,0,1,0deg);
+		transform: scale3d(1,1,1) rotate3d(0,0,1,0deg);
+	}
+}
+@-webkit-keyframes showVideo-2 {
+	50% {
+		width: 50vh;
+		height: 50vh;
+		opacity: 1;
+		-webkit-transform: scale3d(0.5,0.5,1) rotate3d(0,0,1,-5deg);
+		transform: scale3d(0.5,0.5,1) rotate3d(0,0,1,-5deg);
+	}
+	100% {
+		width: 100vw;
+		height: 100vh;
+		opacity: 1;
+		-webkit-transform: scale3d(1,1,1) rotate3d(0,0,1,0deg);
+		transform: scale3d(1,1,1) rotate3d(0,0,1,0deg);
+	}
+}
+
+@keyframes showVideo-2 {
+	50% {
+		width: 50vh;
+		height: 50vh;
+		opacity: 1;
+		-webkit-transform: scale3d(0.5,0.5,1) rotate3d(0,0,1,-5deg);
+		transform: scale3d(0.5,0.5,1) rotate3d(0,0,1,-5deg);
+	}
+	100% {
+		width: 100vw;
+		height: 100vh;
+		opacity: 1;
+		-webkit-transform: scale3d(1,1,1) rotate3d(0,0,1,0deg);
+		transform: scale3d(1,1,1) rotate3d(0,0,1,0deg);
+	}
+}
+@-webkit-keyframes hideVideo {
+	0% {
+		width: 100vw;
+		height: 100vh;
+		opacity: 1;
+		-webkit-transform: scale3d(1,1,1) rotate3d(0,0,1,0deg);
+		transform: scale3d(1,1,1) rotate3d(0,0,1,0deg);
+	}
+	100% {
+		width: 100vw;
+		height: 100vh;
+		opacity: 0;
+		-webkit-transform: scale3d(1,1,1) rotate3d(0,0,1,0deg);
+		transform: scale3d(1,1,1) rotate3d(0,0,1,0deg);
+	}
+}
+
+@keyframes hideVideo {
+	0% {
+		width: 100vw;
+		height: 100vh;
+		opacity: 1;
+		-webkit-transform: scale3d(1,1,1) rotate3d(0,0,1,0deg);
+		transform: scale3d(1,1,1) rotate3d(0,0,1,0deg);
+	}
+	100% {
+		width: 100vw;
+		height: 100vh;
+		opacity: 0;
+		-webkit-transform: scale3d(1,1,1) rotate3d(0,0,1,0deg);
+		transform: scale3d(1,1,1) rotate3d(0,0,1,0deg);
+	}
+}
+
+/* Overwriting fullPage.js tooltip color
+* --------------------------------------- */
+#pp-nav.custom .pp-tooltip{
+	background-color: transparent;
+}

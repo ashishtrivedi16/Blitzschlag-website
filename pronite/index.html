@@ -1,0 +1,433 @@
+<html>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="description" content="Blitzschlag is the annual cultural and technical fest of Malaviya National Institute of Technology,Jaipur. To be held from 24-26th feb 2017." />
+    	<meta name="author" content="Blitzschlag Team" />
+    	<meta name="keywords"  content="Blitzschlag,Blitzschlag 2017,Blitzschlag mnit ,Blitzschlag mnit 2017,mnit fest 2017,mnit fest,Blitzschlag'17"/>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	    <link rel="shortcut icon" href="tathva.ico" type="image/x-icon">
+	    <link rel="icon" href="tathva.ico" type="image/x-icon">
+	    <title>Blitzschlag &#39;17- Technical Events | MNIT Jaipur</title>
+
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/check.css" />
+		<link rel="stylesheet" type="text/css" href="css/arrows.css" />
+		<link rel="stylesheet" type="text/css" href="css/navstyle.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/loadingTathva.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/loadingTathva.js"></script>
+		<script src="js/blazy.min.js"></script>
+		<script src="js/demo.js"></script>
+		<script>
+		document.documentElement.className = 'js no-touch csstransitions';
+		</script>
+	</head>
+	<body class="demo-2">
+	<style>
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+
+    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+
+    z-index: 1001;
+}
+
+    #loader:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #e74c3c;
+
+        -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+        animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #f9c922;
+
+        -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+          animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    @-webkit-keyframes spin {
+        0%   {
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+    @keyframes spin {
+        0%   {
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+
+    #loader-wrapper .loader-section {
+        position: fixed;
+        top: 0;
+        width: 51%;
+        height: 100%;
+        background: #222222;
+        z-index: 1000;
+        -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateX(0);  /* IE 9 */
+        transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader-wrapper .loader-section.section-left {
+        left: 0;
+    }
+
+    #loader-wrapper .loader-section.section-right {
+        right: 0;
+    }
+
+    /* Loaded */
+    .loaded #loader-wrapper .loader-section.section-left {
+        -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(-100%);  /* IE 9 */
+                transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    .loaded #loader-wrapper .loader-section.section-right {
+        -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(100%);  /* IE 9 */
+                transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+
+-webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    .loaded #loader {
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;
+                transition: all 0.3s ease-out;
+    }
+    .loaded #loader-wrapper {
+        visibility: hidden;
+
+        -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateY(-100%);  /* IE 9 */
+                transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.3s 1s ease-out;
+                transition: all 0.3s 1s ease-out;
+    }
+
+    /* JavaScript Turned Off */
+    .no-js #loader-wrapper {
+        display: none;
+    }
+    .no-js h1 {
+        color: #222222;
+    }
+    </style>
+<div id="demo-content">
+			<div id="loader-wrapper">
+				<div id="loader"></div>
+
+				<div class="loader-section section-left"></div>
+	            <div class="loader-section section-right"></div>
+
+			</div>
+		</div>
+	<div class="container" id="page0" >
+		<div class="segmenter" id="segment_0" style="background-image: url(img/armaan.jpeg);background-size: cover;"></div>
+		<h2 class="trigger-headline trigger-headline--hidden" id="text0" style="color: #000">
+			<span style="padding: 0 1vw;">A</span>
+			<span style="padding: 0 1vw;">R</span>
+			<span style="padding: 0 1vw;">M</span>
+			<span style="padding: 0 1vw;">A</span>
+			<span style="padding: 0 1vw;">A</span>
+			<span style="padding: 0 1vw;">N</span>
+			<span style="padding: 0 1vw 0 3.25vw;">M</span>
+			<span style="padding: 0 1vw;">A</span>
+			<span style="padding: 0 1vw;">L</span>
+			<span style="padding: 0 1vw">I</span>
+			<span style="padding: 0 1vw;">K</span>
+		</h2>
+		<h5 class="trigger-headline hidden" id="date_0" style="color: #000"><strong>25th February</strong><br><br><br>8pm Onwards</br></h5>
+		<audio class="b-lazy" id='song_0' style="position: absolute;top: 0;left: 0;z-index: 200" autoplay loop>
+			<source src="songs/armaan.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+	<div class="container" id="page1" >
+		<div class="segmenter" id="segment_1" style="background-image: url(img/djnyk.jpg)"></div>
+			<h2 class="trigger-headline trigger-headline--hidden" id="text1" style="font-size: 5vw">
+				<span style="padding: 0 1vw;">D</span>
+				<span style="padding: 0 1vw;">J</span>
+				<span style="padding: 0 1vw 0 1.75vw;">N</span>
+				<span style="padding: 0 1vw;">Y</span>
+				<span style="padding: 0 1vw;">K</span>
+			</h2>
+			<h5 class="trigger-headline hidden" id="date_1">26th February<br>7pm Onwards</br></h5>
+			<audio class="b-lazy" id='song_1' style="position: absolute;top: 0;left: 0;z-index: 200" loop>
+			  <source src="songs/djnyk.mp3" type="audio/mpeg">
+			</audio>
+		</div>
+	</div>
+	<div class="container" id="page2" >
+			<div class="segmenter" id="segment_2" style="background-image: url(img/papa.jpg)"></div>
+			<h2 class="trigger-headline trigger-headline--hidden" id="text2" style="color:#fff;font-size: 5vw">
+				<span style="padding: 0 1vw;">P</span>
+				<span style="padding: 0 1vw;">A</span>
+				<span style="padding: 0 1vw;">P</span>
+				<span style="padding: 0 1vw;">A</span>
+				<span style="padding: 0 1vw;"> </span>
+				<span style="padding: 0 1vw;">C</span>
+				<span style="padding: 0 1vw;">J</span>
+			</h2>
+			<h5 class="trigger-headline hidden" style="color:#fff" id="date_2">24th February</h5>
+			<audio class="b-lazy" id='song_2' style="position: absolute;top: 0;left: 0;z-index: 200" loop>
+			  <source src="songs/Sprite.mp3" type="audio/mpeg">
+			</audio>
+	</div>
+	<div class="container" id="page3" >
+			<div class="segmenter" id="segment_3" style="background-image: url(img/geeta.jpg)"></div>
+			<h2 class="trigger-headline trigger-headline--hidden" id="text3" style="color:#fff;font-size: 5vw">
+				<span style="padding: 0 1vw;">G</span>
+				<span style="padding: 0 1vw;">E</span>
+				<span style="padding: 0 1vw;">E</span>
+				<span style="padding: 0 1vw;">T</span>
+				<span style="padding: 0 1vw;">A</span>
+				<span style="padding: 0 1vw 0 3vw;">C</span>
+				<span style="padding: 0 1vw;">H</span>
+				<span style="padding: 0 1vw;">A</span>
+				<span style="padding: 0 1vw;">N</span>
+				<span style="padding: 0 1vw;">D</span>
+				<span style="padding: 0 1vw;">R</span>
+				<span style="padding: 0 1vw;">A</span>
+				<span style="padding: 0 1vw;">N</span>
+			</h2>
+			<h5 class="trigger-headline hidden" style="color:#fff" id="date_3">25th FEBRUARY<br>6-7:30pm</h5>
+			<audio class="b-lazy" id='song_3' style="position: absolute;top: 0;left: 0;z-index: 200" loop>
+				<source src="songs/classical.mp3" type="audio/mpeg">
+			</audio>
+	</div>
+	<div class="container" id="page4" >
+			<div class="segmenter" id="segment_4" style="background-image: url(img/bhajan.jpg)"></div>
+			<h2 class="trigger-headline trigger-headline--hidden" id="text4" style="color:#fff;font-size: 5vw">
+				<span style="padding: 0 1vw;">B</span>
+				<span style="padding: 0 1vw;">H</span>
+				<span style="padding: 0 1vw;">A</span>
+				<span style="padding: 0 1vw;">J</span>
+				<span style="padding: 0 1vw">A</span>
+				<span style="padding: 0 1vw;">N</span>
+				<span style="padding: 0 1vw 0 4vw;">S</span>
+				<span style="padding: 0 1vw;">A</span>
+				<span style="padding: 0 1vw;">P</span>
+				<span style="padding: 0 1vw;">O</span>
+				<span style="padding: 0 1vw;">R</span>
+				<span style="padding: 0 1vw;">I</span>
+			</h2>
+			<h5 class="trigger-headline hidden" style="color:#fff" id="date_4">26th February<br>5-7pm</h5>
+			<audio class="b-lazy" id='song_4' style="position: absolute;top: 0;left: 0;z-index: 200" loop>
+				<source src="songs/sopoori.mp3" type="audio/mpeg">
+			</audio>
+	</div>
+	<div class="container" id="page5" >
+		<div class="segmenter" id="segment_5" style="background-image: url(img/gurleen.jpg);background-size: cover;"></div>
+		<h2 class="trigger-headline trigger-headline--hidden" id="text5" style="color: #000">
+			<span style="padding: 0 1vw;">G</span>
+			<span style="padding: 0 1vw;">U</span>
+			<span style="padding: 0 1vw;">R</span>
+			<span style="padding: 0 1vw;">L</span>
+			<span style="padding: 0 1vw;">E</span>
+			<span style="padding: 0 1vW;">E</span>
+			<span style="padding: 0 1vw;">N</span>
+			<span style="padding: 0 1vw 0 4vw;">G</span>
+			<span style="padding: 0 1vw;">R</span>
+			<span style="padding: 0 1vw;">E</span>
+			<span style="padding: 0 1vw;">W</span>
+			<span style="padding: 0 1vw;">A</span>
+			<span style="padding: 0 1vw;">L</span>
+		</h2>
+		<h5 class="trigger-headline hidden" id="date_5" style="color: #000"><br><br><br>24th February<br>7:30pm Onwards</br></h5>
+		<audio class="b-lazy" id='song_5' style="position: absolute;top: 0;left: 0;z-index: 200" loop>
+			<source src="songs/gurleen.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+	<!--<div class="container" id="page5" >
+			<div class="segmenter" id="segment_5" style="background-image: url(img/#.jpg)"></div>
+			<h2 class="trigger-headline trigger-headline--hidden" id="text5" style="color:#202425;font-size: 5vw">
+				<span style="padding: 0 1vw;">G</span>
+				<span style="padding: 0 1vw;">U</span>
+				<span style="padding: 0 1vw;">R</span>
+				<span style="padding: 0 1vw;">L</span>
+				<span style="padding: 0 1vw;">L</span>
+				<span style="padding: 0 1vw;">E</span>
+				<span style="padding: 0 1vW;">E</span>
+				<span style="padding: 0 1vw 0 4vw;">N</span>
+				<span style="padding: 0 1vw;">G</span>
+				<span style="padding: 0 1vw;">R</span>
+				<span style="padding: 0 1vw;">E</span>
+				<span style="padding: 0 1vw;">W</span>
+				<span style="padding: 0 1vw;">A</span>
+				<span style="padding: 0 1vw;">L</span>
+			</h2>
+			<h5 class="trigger-headline hidden" style="color:#000" id="date_5">26th February<br>5-7pm</h5>
+			<audio class="b-lazy" id='song_4' style="position: absolute;top: 0;left: 0;z-index: 200" loop>
+				<source src="songs/#" type="audio/mpeg">
+			</audio>
+	</div>-->
+	<arrow>
+		<span class="prev white"><i class="whiter"></i></span>
+		<span class="next white"><i class="whiter"></i></span>
+	</arrow>
+	<header>
+		<nav id='cssmenu'>
+		<div class="logo"><a href="../index.html"><span style="color:white;">Blitzschlag</span> 2017</a></div>
+		<div id="head-mobile"></div>
+		<div class="button"></div>
+		<ul>
+			<li><a href='../index.html'>Home</a></li>
+			<li><a href='#'>Events</a>
+			   <ul>
+			      <li><a href='index.html'>Technical</a>
+			         <ul>
+			            <li><a href='index.html#Departmental Events'>Departmental Events</a>
+			           <!-- ul>
+			             <li><a href='index.html#Departmental Events'>Computer Science</a></li>
+			             <li><a href='index.html#Departmental Events'>Electronics and Electrical</a></li>
+			             <li><a href="index.html#Departmental Events">Mechanical</a></li>
+			             <li><a href="index.html#Departmental Events">Chemical</a></li>
+			             <li><a href="index.html#Departmental Events">Civil</a></li>
+			             <li><a href="index.html#Departmental Events">Metallurgy</a></li>
+			         </ul -->
+			           </li>
+			            <li><a href='index.html#Flagship Events'>Flagship Events</a>
+			           <!-- ul>
+			             <li><a href='index.html#Flagship Events'>Internet of things</a></li>
+			             <li><a href='index.html#Flagship Events'>Android App Development</a></li>
+			           </ul -->
+			              </li>
+			           <li><a href="index.html#Robotics">Robotics</a></li>
+			         </ul>
+			      </li>
+			      <li><a href='../cultural/index.html'>Cultural Events</a>
+			         <ul>
+			            <li><a href='../cultural/index.html#Music and Dance'>Music and Dance</a></li>
+			            <li><a href='../cultural/index.html#Fine Arts'>Concevoir</a></li>
+			           <li><a href='../cultural/index.html#Dramatics'>Dramatics</a></li>
+			           <li><a href='../cultural/index.html#Literary'>Literary</a></li>
+			           <li><a href='../cultural/index.html#Film'>Film</a></li>
+			           <li><a href='../cultural/index.html#Photography'>Photography</a></li>
+			         </ul>
+			      </li>
+			      <li><a href="../gaming/index.html">Gaming</a>
+			        <ul>
+			          <li><a href="../gaming/index.html">FIFA</a></li>
+			          <li><a href="../gaming/index.html">Counter Strike GO</a></li>
+			          <li><a href="../gaming/index.html">Need for Speed</a></li>
+			          <li><a href="../gaming/index.html">Mili Militia</a></li>
+			        </ul>
+			      </li>
+			      <li><a href="../panache/index.html">Fashion</a></li>
+                              <li><a href="../management/index.html">Management</a></li>
+			   </ul>
+			</li>
+		<li><a href='index.html#Workshops'>Workshops</a>
+		  <ul>
+                 <li><a href='../technical events/index.html#Workshops'>Workshop On Explosives</a></li>
+           <li><a href='../technical events/index.html#Workshops'>Data Analysis</a></li>
+           <li><a href='../technical events/index.html#Workshops'>Augmented Reality</a></li>
+           <li><a href='../technical events/index.html#Workshops'>Industrial automation</a></li>
+           <li><a href='../technical events/index.html#Workshops'>Conquer the Cube</a></li>
+           <li><a href='../technical events/index.html#Workshops'>Sixth Sense Technology</a></li>
+           <li><a href='../technical events/index.html#Workshops'>Tall Building Design</a></li>
+           <li><a href='../technical events/index.html#Workshops'>Android App Development</a></li>
+           <li><a href='../technical events/index.html#Workshops'>Ethical Hacking</a></li>
+           <li><a href='../technical events/index.html#Workshops'>3D Printing</a></li>
+		  </ul>
+		</li>
+		<li><a href='../team/index.html'>Team</a></li>
+		<li><a href='../registration/index.php'>Registration</a>
+		    <ul>
+		      <li><a href="../registration/index.php">Registration</a></li>
+		      <li><a href="../registration/index.php">Accommodation</a></li>
+		    </ul>
+		</li>
+		<li><a href="../map/index.html">Maps</a></li>
+		<li class='active'><a href="index.html">Pronites</a></li>
+		<li><a href='../sponsors/index.html'>Sponsors</a></li>
+		</ul>
+		</nav>
+		</header>
+	    <!--Preloader-->
+	    <div id="bars" style="position: fixed;bottom: 5vh;left: 10vw;">
+			<div class="music bar"></div>
+			<div class="music bar"></div>
+			<div class="music bar"></div>
+			<div class="music bar"></div>
+			<div class="music bar"></div>
+			<div class="music bar"></div>
+			<div class="music bar"></div>
+			<div class="music bar"></div>
+			<div class="music bar"></div>
+			<div class="music bar"></div>
+		</div>
+		<script src="js/anime.min.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/index.js"></script>
+		<script>
+	$(document).ready(function() {
+
+		setTimeout(function(){
+			$('body').addClass('loaded');
+		}, 3000);
+
+	});
+	</script>
+	</body>
+</html>

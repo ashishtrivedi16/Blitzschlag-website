@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Blitzschlag'17</title>
+	<meta name="author" content="Blitzschlag'17" />
+	<meta name="description" content="Blitzschlag website" />
+	<meta name="keywords"  content="blitzscchlag, mnit, jaipur" />
+	<meta name="Resource-type" content="Document" />
+	<link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.pagepiling.min.js"></script>
+	<script type="text/javascript">
+		var deleteLog = false;
+
+		$(document).ready(function() {
+	    	$('#pagepiling').pagepiling({
+	    		menu: '#menu',
+	    		anchors: ['Econometrics', 'Start Up Nivesh'],
+	    		navigation: {
+		            'textColor': '#f2f2f2',
+		            'bulletsColor': '#FFD700',
+		            'position': 'right',
+		            'tooltips': ['Econometrics', 'Start Up Nivesh']
+		        }
+			});
+	    });
+    </script>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/superslides.css">
+		<link href="css/slick.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/navstyle.css">
+		<link rel="stylesheet" href="css/elastic_grid.css">
+		<link rel='stylesheet prefetch' href='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/css/jquery.circliful.css'>
+		<link id="orginal" href="css/themes/yellow-theme.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <style>
+    /* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section1,
+	#section2,
+	#section3{
+		background-size: cover;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section1{
+		background-image: url(imgs/bg1.jpg);
+	}
+	#section2{
+		background-image: url(imgs/bg2.jpg);
+		padding: 6% 0 0 0;
+	}
+	<!--#section3{
+		background-image: url(imgs/bg3.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section3 h1{
+		color: #000;
+	}-->
+
+
+
+	#section1 h1{
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: 100px;
+		color: #fff;
+	}
+
+	#section1 p{
+		color:#fff;
+		font-size:27px;
+		margin-top: 120px;
+		padding: 50px;
+		text-shadow: 1px 5px 20px #000;
+	}
+	#section2 .intro{
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: 100px;
+	}
+	#section2 h1{
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: 40px;
+		color: #fff;
+	}
+	#section2 p{
+		font-size:27px;
+		color:#fff;
+		padding-top: 120px;
+		padding-bottom: 30px;
+		text-shadow: 1px 5px 20px #000;
+		 
+	}
+
+	<!--#section3 h1{
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: 100px;
+		color: #fff;
+	}
+	#section3 p{
+		font-size:27px;
+		color:#fff;
+		padding-top: 120px;
+		padding-bottom: 30px;
+		text-shadow: 1px 5px 20px #000;
+	}-->
+
+	#infoMenu li a{
+			color: #fff;
+	}
+
+	.link{
+		color:white;
+		background:rgba(100,100,100,0.2);
+		font-size:50px;
+		border:none;
+		color:red;
+	}
+	.link:hover{
+		boder:1px solid black;
+		cursor: pointer;
+	}
+
+    </style>
+
+	<style>
+		#header {
+			width:100%;
+			position: absolute;
+			height:100px;
+			background-color: transparent;
+			z-index:10;
+			border-bottom:1 px solid #aaa;
+		}
+
+		.section {
+
+		}
+
+		#logo {
+			height:100px;
+			width: 300px;
+			text-align:center;
+			vertical-align:middle;
+			padding-top:30px;
+			position:inherit;
+			padding-left:20px;
+			left:0px;
+		}
+		.navbar-brand {
+			color: #fff !important;
+			font-size: 35px;
+			font-weight: bolder;
+			font-family: 'Varela', sans-serif;
+		}
+
+		#menu {
+			width: 60%;
+			text-align:right;
+			vertical-align:middle;
+			padding: 0px;
+			font-family: 'Varela', sans-serif;
+			padding-top:50px;
+			left:500px;
+
+		}
+		a.nav{
+
+			text-transform: uppercase;
+			font-size:13px;
+			color:white;
+			font-weight:bold;
+			margin-right:30px;
+		}
+		a#active{
+			color:#f0ad4e;
+		}
+	</style>
+
+</head>
+<body>
+	<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+<style>
+.link{
+	background: transparent;
+	border: 2px solid white;
+	color: white;
+	font-size: 25px;
+	padding: 8px;
+}
+#big_wrapper {
+	min-width: 1200px;
+}
+</style>
+<header>
+    <nav id='cssmenu'>
+    <div class="logo"><a href="../index.html"><span style="color:white;">Blitzschlag</span> 2017</a></div>
+    <div id="head-mobile"></div>
+    <div class="button"></div>
+    <ul>
+    <li><a href='../index.html'>HOME</a></li>
+    <li class='active'><a href='#'>Events</a>
+       <ul>
+          <li><a href='../technical events/index.html'>Technical</a>
+             <ul>
+                <li><a href='../technical events/index.html#Departmental Events'>Departmental Events</a>
+               <ul>
+                 <li><a href='../technical events/index.html#Departmental Events'>Computer Science</a></li>
+                 <li><a href='../technical events/index.html#Departmental Events'>Electronics and Electrical</a></li>
+                 <li><a href="../technical events/index.html#Departmental Events">Mechanical</a></li>
+                 <li><a href="../technical events/index.html#Departmental Events">Chemical</a></li>
+                 <li><a href="../technical events/index.html#Departmental Events">Civil</a></li>
+                 <li><a href="../technical events/index.html#Departmental Events">Metallurgy</a></li>
+             </ul>
+               </li>
+                <li><a href='../technical events/index.html#Flagship Events'>Flagship Events</a>
+               <ul>
+                 <li><a href='../technical events/index.html#Flagship Events'>Internet of things</a></li>
+                 <li><a href='../technical events/index.html#Flagship Events'>Android App Development</a></li>
+               </ul>
+                  </li>
+               <li><a href="../technical events/index.html#Robotics">Robotics</a></li>
+             </ul>
+          </li>
+          <li><a href='../cultural/index.html'>Cultural Events</a>
+             <ul>
+                <li><a href='../cultural/index.html#Music and Dance'>Music and Dance</a></li>
+                <li><a href='../cultural/index.html#Fine Arts'>Concevoir</a></li>
+               <li><a href='../cultural/index.html#Dramatics'>Dramatics</a></li>
+               <li><a href='../cultural/index.html#Literary'>Literary</a></li>
+               <li><a href='../cultural/index.html#Film'>Film</a></li>
+               <li><a href='../cultural/index.html#Photography'>Photography</a></li>
+             </ul>
+          </li>
+          <li><a href="/gaming/index.html">Gaming</a>
+            <ul>
+              <li><a href="/gaming/index.html">FIFA</a></li>
+              <li><a href="/gaming/index.html">Counter Strike GO</a></li>
+              <li><a href="/gaming/index.html">Need for Speed</a></li>
+              <li><a href="/gaming/index.html">Mili Militia</a></li>
+            </ul>
+          <li><a href="../panache/index.html">Fashion</a></li>
+          <li><a href="index.html">Management</a></li>
+          <li><a href="cultural/index.html#Fine Arts">Concevoir 2017</a></li>
+       </ul>
+    </li>
+    <li><a href='../technical events/index.html#Workshops'>Workshops</a>
+      <ul>
+           <li><a href='technical events/index.html#Workshops'>Workshop On Explosives</a></li>
+           <li><a href='technical events/index.html#Workshops'>Data Analysis</a></li>
+           <li><a href='technical events/index.html#Workshops'>Augmented Reality</a></li>
+           <li><a href='technical events/index.html#Workshops'>Industrial automation</a></li>
+           <li><a href='technical events/index.html#Workshops'>Conquer the Cube</a></li>
+           <li><a href='technical events/index.html#Workshops'>Sixth Sense Technology</a></li>
+           <li><a href='technical events/index.html#Workshops'>Tall Building Design</a></li>
+           <li><a href='technical events/index.html#Workshops'>Android App Development</a></li>
+           <li><a href='technical events/index.html#Workshops'>Ethical Hacking</a></li>
+           <li><a href='technical events/index.html#Workshops'>3D printing</a></li>
+      </ul>
+    </li>
+    <li><a href='../team/index.html'>Team</a></li>
+    <li><a href='../registration/index.php'>Registration</a>
+        <ul>
+          <li><a href="../registration/index.php">Registration</a></li>
+          <li><a href="../registration/index.php">Accommodation</a></li>
+        </ul>
+    </li>
+    <li><a href="../map/index.html">Maps</a></li>
+    <li><a href="#">Pronites</a></li>
+    <li><a href='sponsors/index.html'>Sponsors</a></li>
+    </ul>
+    </nav>
+    </header>
+	<style>
+	img#cross:hover {
+		cursor:hand;
+		opacity:1;
+		width:55;
+		height:55
+	}
+	</style>
+
+	<img id="cross" src="imgs/cross.png" style="opacity:0.7;width:50px;visibility:hidden; height:50px; position:fixed; top:120px; z-index:11; right:100px;">
+	<script type="text/javascript">
+		document.getElementById("cross").addEventListener("click", hideDetails);
+		function hideDetails(){
+			document.getElementById("frame").style.visibility="hidden";
+			document.getElementById("cross").style.visibility="hidden";
+		}
+
+		document.getElementById("btnDrama").addEventListener("click", showDetails);
+		var xyz;
+		function showDetails(xyz){
+			document.getElementById("frame").src= xyz + "/index.html";
+			document.getElementById("frame").style.visibility="visible";
+			document.getElementById("cross").style.visibility="visible";
+		}
+	</script>
+	<!--<iframe id="frame" name="iframeX" style="position:absolute; visibility:hidden;opacity:1; width:100%; height:100%;border:none; top:0px; z-index:10;"></iframe>-->
+
+	<div id="pagepiling">
+	    <div class="section" id="section1">
+			<div class="intro">
+				
+				<h1 style="margin-top:20px;">Aspire Bquiz</h1>
+				    		<p>Do you think you can survive and emerge a champion in a battle of the wits? Then, ‘Aspire Business Quiz’ is here to test your business quotient. The quiz is a pursuit of Knowledge, encourage participants to achieve excellence and Increase their awareness of the world around them. Knowledge will be highly rewarded!
+</p>
+				<a href="https://goo.gl/PIhI6w"><button class="link" id="btnDrama">Register</button></a>
+				<a href="Aspire_rules.pdf"><button class="link" id="btnDrama">Rules</button></a>
+			</div>
+			<img id="go-button-down" src="imgs/downarrow.png" style="width:50px; height:50px; margin:20px;">
+	    </div>
+	    <div class="section" id="section2">
+	    	<div class="intro">
+	    		<h1>Start Up Nivesh </h1>
+	    		<p>Variety of startups, big money, stock IPOs, market swings - A rollercoaster ride into the
+financial kingdom. <br>
+Are you the real wolf of Wall Street?<br>
+Discover the financial wizard in you and conquer the market with your prudence,
+decisiveness and common sense.
+</p>
+		           	<a href="https://goo.gl/PIhI6w"><button class="link" id="btnDrama">Register</button></a>
+				<a href="startupnivesh.pdf"><button class="link" id="btnDrama">Rules</button></a>
+				
+			</div>
+<img id="go-button-down" src="imgs/downarrow.png" style="width:50px; height:50px; margin:20px;z-index:100;">
+	    </div>
+	    <!--<div class="section" id="section3">
+	    	<div class="intro">
+	    		<h1>Robotics</h1>
+	    		<p></p>
+				<button class="link" id="btnDrama" onclick="showDetails('robotics')">Events list</button>
+	    	</div>
+			<img id="go-button-down" src="imgs/downarrow.png" style="width:50px; height:50px; margin:20px;">
+	    </div>
+	</div>-->
+</div>
+<script>
+setInterval(function(){
+		$('#go-button-down').animate({
+				top : '+=10px'
+		},600);
+		 $('#go-button-down').animate({
+					top : '-=10px'
+		},600);
+},1200);
+</script>
+ <script src="js/index.js"></script>
+</body>
+</html>

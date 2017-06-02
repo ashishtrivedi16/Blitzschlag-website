@@ -1,0 +1,22 @@
+#loadingBackground{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+	top: 0;
+	left: 0;
+	background-color: #000000;
+}
+#loadingTathva{
+	position: absolute;
+	height: 300px;
+	width: 300px;
+}
+#loadingContainer{
+	display: none;
+}
+#loadingSun{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+}
